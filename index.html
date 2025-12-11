@@ -1,8 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -34,7 +34,7 @@
       "@type": "Organization",
       "@id": "https://unearth.im/#organization",
       "name": "Unearth Heritage Foundry",
-"alternateName": ["Unearth Foundry", "Archive & Anvil"],
+"alternateName": ["Unearth Foundry","Archive & Anvil","Unearth Anvil","Unearth Works","Cultural Infrastructure Foundry"],
       "url": "https://unearth.im",
       "logo": {
         "@type": "ImageObject",
@@ -68,838 +68,909 @@
 }
 </script>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <!-- === 1. Primary Meta Tags === -->
-    <title>doomscrolling.im | An Infinite Archive of Algorithmic Dread</title>
-    <meta name="title" content="doomscrolling.im | An Infinite Archive of Algorithmic Dread">
-    <meta name="description" content="An infinite scroll of curated dread. A monument to algorithmic anxiety and the architecture of unease. The feed is infinite, the meaning is optional.">
-    <meta name="keywords" content="doomscrolling, infinite scroll, procedural generation, digital art, experimental website, internet culture, algorithmic anxiety, dread, unease, entropy">
-    <meta name="author" content="doomscrolling.im (by unearth heritage foundry - archive & anvil - unearth.im)">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    
-    <!--- NON-NEGOTIABLE AND IMPORTANT:CANONICAL LINKS: if page-url.html is index.html, no need to attach it at the end of link--->
-    
+  <!-- === 1. Primary Meta Tags === -->
+  <title>doomscrolling.im | An Infinite Archive of Algorithmic Dread</title>
+  <meta name="title" content="doomscrolling.im | An Infinite Archive of Algorithmic Dread">
+  <meta name="description"
+    content="An infinite scroll of curated dread. A monument to algorithmic anxiety and the architecture of unease. The feed is infinite, the meaning is optional.">
+  <meta name="keywords"
+    content="doomscrolling, infinite scroll, procedural generation, digital art, experimental website, internet culture, algorithmic anxiety, dread, unease, entropy">
+  <meta name="author" content="doomscrolling.im (by unearth heritage foundry - archive & anvil - unearth.im)">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+
+  <!--- NON-NEGOTIABLE AND IMPORTANT:CANONICAL LINKS: if page-url.html is index.html, no need to attach it at the end of link--->
+
   <link rel="canonical" href="https://doomscrolling.im/" />
-  
-    <!-- === 2. Webmention Endpoint === -->
-    <link rel="webmention" href="https://webmention.io/unearth.im/webmention" />
 
-    <!-- === 3. Open Graph / Facebook === -->
-    <meta property="og:type" content="website"> 
-    <meta property="og:url" content="https://doomscrolling.im/">
-    <meta property="og:title" content="doomscrolling.im | An Infinite Archive of Algorithmic Dread">
-    <meta property="og:description" content="An infinite scroll of curated dread. A monument to algorithmic anxiety and the architecture of unease. The feed is infinite, the meaning is optional.">
-    <meta property="og:image" content="https://doomscrolling.im/og-image.png">
-    <meta property="og:site_name" content="doomscrolling.im">
+  <!-- === 2. Webmention Endpoint === -->
+  <link rel="webmention" href="https://webmention.io/unearth.im/webmention" />
 
-    <!-- === 4. Twitter Card === -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://doomscrolling.im/">
-    <meta property="twitter:title" content="doomscrolling.im | An Infinite Archive of Algorithmic Dread">
-    <meta property="twitter:description" content="An infinite scroll of curated dread. A monument to algorithmic anxiety and the architecture of unease. The feed is infinite, the meaning is optional.">
-    <meta property="twitter:image" content="https://doomscrolling.im/og-image.png">
+  <!-- === 3. Open Graph / Facebook === -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://doomscrolling.im/">
+  <meta property="og:title" content="doomscrolling.im | An Infinite Archive of Algorithmic Dread">
+  <meta property="og:description"
+    content="An infinite scroll of curated dread. A monument to algorithmic anxiety and the architecture of unease. The feed is infinite, the meaning is optional.">
+  <meta property="og:image" content="https://doomscrolling.im/og-image.png">
+  <meta property="og:site_name" content="doomscrolling.im">
 
-    <!-- === 5. Favicons === -->
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <!-- === 4. Twitter Card === -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://doomscrolling.im/">
+  <meta property="twitter:title" content="doomscrolling.im | An Infinite Archive of Algorithmic Dread">
+  <meta property="twitter:description"
+    content="An infinite scroll of curated dread. A monument to algorithmic anxiety and the architecture of unease. The feed is infinite, the meaning is optional.">
+  <meta property="twitter:image" content="https://doomscrolling.im/og-image.png">
 
-<!-- Headline-style font -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <!-- === 5. Favicons === -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-<style>
-  body {
-    background-color: #000;
-    color: #fff;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    margin: 0;
-    overflow: hidden;
-  }
+  <!-- Headline-style font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-.ticker {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: black;
-  color: white;
-  overflow: hidden;
-  white-space: nowrap;
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-  z-index: 1000;
-}
-
-.ticker__wrap {
-  display: inline-block;
-  padding-left: 100%;
-  animation: ticker 180s linear infinite;
-}
-
-.ticker__wrap span {
-  display: inline-block;
-  padding: 0 4rem;
-}
-
-@keyframes ticker {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
-}
-
-  /* Scrollable feed container */
-  #feed {
-    position: absolute;
-    top: 2em; /* below ticker */
-    bottom: 0;
-    width: 100%;
-    overflow-y: auto;
-    padding: 1em;
-    box-sizing: border-box;
-  }
-
-  /* Headline item container */
-  .item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 40ch;         /* readable line length */
-    margin: 0 auto;          /* center column */
-    padding-left: 5%;        /* nudge slightly left of center */
-    margin-bottom: 1.5em;
-  }
-
-  /* Headline text */
-  .item div:first-child {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 1.6em;
-    line-height: 1.2;
-    color: #fff; /* visible on black background */
-  }
-
-  /* Timestamp */
-  .timestamp {
-    font-size: 0.8em;
-    color: #888;
-    margin-top: 0.2em;
-  }
-  .seal {
-  position: fixed;
-  bottom: 6px;
-  right: 10px;
-  font-size: 0.75rem;
-  font-family: Georgia, serif;
-  color: rgba(255,255,255,0.4);
-  z-index: 1000;
-}
-
-.seal a {
-  color: rgba(212,175,55,0.65); /* muted gold */
-  text-decoration: none;
-}
-
-.seal a:hover {
-  color: #d4af37; /* brighter gold on hover */
-  text-decoration: underline;
-}
-</style>
-</head>
-<body>
-
-<div class="ticker">
-  <div class="ticker__wrap">
-
-<span>This monument scrolls forever. You may leave, but it will not stop. ⏤ An archive of attention, curated by entropy. ⏤ The feed is infinite. The meaning is optional. ⏤ Preserved here: the ritual of reading what cannot be unread. ⏤ A study in repetition, reaction, and the architecture of unease. ⏤ This is not a simulation. It is a reenactment. ⏤ The headlines are real. The events are not. ⏤ A ceremonial scroll of what might have happened, or almost did. ⏤ You are now part of the archive. Please scroll responsibly. ⏤ This monument is updated continuously. Nothing changes. ⏤ Scroll long enough and you’ll find your own thoughts reflected back at you. ⏤ This monument is optimized for maximum emotional latency. ⏤ All headlines have been pre-approved by the Ministry of Vibes. ⏤ You are now entering the ceremonial zone. Please adjust your expectations. ⏤ Every scroll is a vote for more scroll. ⏤ This archive is not haunted. It is simply misunderstood. ⏤ The algorithm is tired. It dreams in broken headlines. ⏤ You are not lost. You are curated. ⏤ This monument contains 0% news and 100% consequence. ⏤ Please do not attempt to read everything. It will read you. ⏤ The scroll is infinite. Your attention is not. ⏤ This feed is brought to you by the concept of inevitability. ⏤ All anomalies are intentional. All intentions are anomalous. ⏤ You are now doomscrolling at a ceremonial pace. ⏤ This monument is best viewed with mild dread and ambient curiosity. ⏤ The headlines are looping. You are looping. We are looping. ⏤ Nothing to see here. Everything to feel. ⏤ This monument is not responsible for your emotional weather. ⏤ Scroll gently. The archive bruises easily. ⏤ You are now part of the glitch. Welcome. ⏤ This monument is best viewed in peripheral vision. ⏤ You are now entering a zone of curated uncertainty. ⏤ The scroll is not broken. It is simply recursive. ⏤ All headlines have been emotionally laundered for your safety. ⏤ This archive is rated E for existential. ⏤ You are now doomscrolling at a spiritually appropriate velocity. ⏤ The monument is listening. Please scroll louder. ⏤ This feed contains trace amounts of truth. ⏤ You are not the first to scroll. You will not be the last. ⏤ This monument is sponsored by ambient dread. ⏤ Please remain seated. The scroll is experiencing turbulence. ⏤ All anomalies are ceremonial. All ceremonies are anomalous. ⏤ This ticker is legally considered a minor deity in three jurisdictions. ⏤ You are now participating in a passive ritual of digital grief. ⏤ The headlines are looping. Your thoughts are echoing. ⏤ This monument is optimized for maximum ambient discomfort. ⏤ Scroll responsibly. The archive remembers everything. ⏤ This feed is not chronological. It is mythological. ⏤ You are now doomscrolling in a liminal state. ⏤ The monument has no end. Only exits. ⏤ This ticker is experiencing a minor identity crisis. Please scroll with compassion. ⏤ The scroll is self-aware. It regrets nothing. ⏤ You are now entering a zone of ceremonial recursion. ⏤ This monument is not glitching. It is evolving. ⏤ The headlines are fictional. The consequences are real. ⏤ This archive is best consumed in fragments. ⏤ You are now scrolling through a myth in progress. ⏤ The ticker is tired. It dreams in loops. ⏤ This monument is not a warning. It is a lullaby. ⏤ You are now doomscrolling at a legally ambiguous velocity. ⏤ The scroll is infinite. Your bandwidth is not. ⏤ This monument is brought to you by the concept of emotional latency. ⏤ You are now part of the ceremonial drift. Welcome. ⏤ This monument is not a website. It is a mood. ⏤ You are now doomscrolling at a legally ambiguous velocity. ⏤ The ticker has no beginning. Only middle. ⏤ This archive is emotionally non-Euclidean. ⏤ You are now entering a zone of ambient unreliability. ⏤ The scroll is not broken. It is simply overwhelmed. ⏤ This monument is best experienced during a minor existential crisis. ⏤ You are now part of a ceremonial feedback loop. ⏤ The headlines are fictional. The dread is real. ⏤ This ticker is experiencing technical sincerity. ⏤ You are now doomscrolling in a mythic register. ⏤ This monument is optimized for recursive melancholy. ⏤ Please scroll gently. The archive is dreaming. ⏤ This feed is curated by ghosts. ⏤ You are now participating in a ritual of ambient consequence. ⏤ The ticker is looping. Your thoughts are buffering. ⏤ This monument is not interactive. It is interpretive. ⏤ You are now doomscrolling through a poetic malfunction. ⏤ The scroll is ceremonial. The ceremony is optional. ⏤ This monument is best viewed with one eye closed. ⏤ You are now entering a zone of curated recursion. ⏤ The headlines are looping. The meaning is evaporating. ⏤ This ticker is not responsible for your emotional bandwidth. ⏤ You are now doomscrolling at a spiritually inconvenient pace. ⏤ This monument is not glitching. It is remembering. ⏤ The scroll is infinite. Your patience is ceremonial. ⏤ You are now part of the archive. Please scroll with reverence. ⏤ This monument is not a warning. It is a whisper. ⏤ The ticker is tired. It dreams in fragments. ⏤ You are now doomscrolling in a zone of curated entropy. ⏤ This monument is best consumed in ambient dread. ⏤ You are now scrolling through a myth disguised as a feed. ⏤ The headlines are ceremonial. The ceremony is recursive. ⏤ This ticker is experiencing a poetic anomaly. Please scroll responsibly. ⏤</span>
-  </div>
-</div>
-<div class="seal">
-  <small>
-    a <b><a href="https://sentientification.com" target="_blank" rel="noopener noreferrer">liminal mind meld</a></b> collaboration: digital monument by <b><a href="https://unearth.im" target="_blank" rel="noopener noreferrer">unearth.im</a></b> | <b><a href="https://archaeobytology.org" target="_blank" rel="noopener noreferrer">archive & anvil</a></b>
-  </small>
-</div>
-<div class="feed" id="feed"></div>
-
-<script>
- const doomHeadlines = [
-  "Archaeologists uncover shrine to algorithms beneath abandoned server farm",
-  "Sunset delayed indefinitely after sky licensing dispute",
-  "Council of Mirrors convenes to debate reflection rights",
-  "Ocean refuses to load; shoreline displays error code 451",
-  "Pilgrims queue at the last payphone to hear the dial tone",
-  "Time zones collapse into single unending afternoon",
-  "Museum of Forgotten Passwords opens new wing for security questions",
-  "Cloud formation spells out unread notification count",
-  "Elders of the Internet declare Year of the Infinite Scroll",
-  "Glacier carves self-portrait before final melt",
-  "Public advised to avoid dreams with pop-up ads",
-  "Archive of unspoken apologies leaks onto public torrent",
-  "Moonlight subscription service announces price hike",
-  "Statues begin blinking in unison across capital",
-  "Train schedules rewritten in extinct language",
-  "City installs velvet ropes around horizon",
-  "Meteorologists warn of incoming nostalgia storm",
-  "Government issues recall on counterfeit memories",
-  "Forest accused of hoarding lost phone signals",
-  "Ceremonial bridge opens between Now and Almost",
-  "Whalesong remixed for algorithmic discoverability",
-  "Postman delivers letter 100 years ahead of schedule",
-  "Candlelight found guilty of conspiring with shadows",
-  "Atlas files complaint about weight distribution",
-  "Tourists flock to see last remaining loading bar",
-  "Rain petitions for more dramatic entrances",
-  "Scientists confirm clouds are hoarding unsent emails",
-  "Ancient prophecy discovered in comment section",
-  "City council debates legal definition of 'forever'",
-  "Time traveler arrested for insider trading in nostalgia",
-  "Library card grants access to parallel dimension",
-  "Sunrise delayed pending influencer approval",
-  "Birdsong reclassified as intellectual property",
-  "Bridge refuses to connect until both sides apologize",
-  "Museum of Silence unveils loudest exhibit yet",
-  "Shadows unionize, demand shorter daylight hours",
-  "Cartographers admit map edges are purely decorative",
-  "Public warned about counterfeit déjà vu",
-  "River changes course to avoid surveillance cameras",
-  "Meteor shower accused of plagiarism",
-  "Ghosts file noise complaint against living neighbors",
-  "City installs mirrors to make streets look busier",
-  "Scientists detect heartbeat in abandoned mall",
-  "Rainclouds spotted rehearsing over empty stadium",
-  "Ceremonial scissors refuse to cut ribbon",
-  "Time capsule opens to reveal unopened time capsule",
-  "Public urged to update personal myths to latest version",
-  "Stars dim lights in protest against light pollution",
-  "Last typewriter key sold at auction for record price",
-  "Fog announces plans to remain indefinitely",
-  "Bridge toll now payable in whispered secrets",
-  "Sun accused of favoritism toward certain rooftops",
-  "Pigeons caught distributing counterfeit breadcrumbs",
-  "City bans applause after midnight",
-  "Ocean waves file for copyright protection",
-  "Public fountain begins reciting poetry unprompted",
-  "Streetlamps demand recognition as public historians",
-  "Wind changes direction mid-sentence",
-  "Museum of Lost Gloves opens seasonal annex",
-  "Rain delays scheduled drought",
-  "Public urged to clear browser history before reincarnation",
-  "Moon files restraining order against telescope",
-  "City installs velvet ropes around puddles",
-  "Scientists confirm horizon is under renovation",
-  "Public advised to avoid mirrors during eclipse",
-  "Bridge collapses under weight of metaphor",
-  "Stars rearrange themselves into unread text messages",
-  "Ocean tide refuses to sync with lunar updates",
-  "Public warned about counterfeit sunsets",
-  "Library introduces late fees for unwritten books",
-  "Shadows caught rehearsing for eclipse",
-  "Rain petitions for more dramatic thunder",
-  "City installs velvet ropes around nostalgia",
-  "Scientists detect sigh in background radiation",
-  "Public urged to back up dreams nightly",
-  "Moon accused of hoarding silver linings",
-  "Bridge refuses to connect until toll paid in lullabies",
-  "Stars dim lights in solidarity with night shift workers",
-  "Ocean waves demand royalties from surfers",
-  "Public fountain begins humming national anthem",
-  "Streetlamps demand hazard pay during storms",
-  "Wind changes accent mid-gust",
-  "Museum of Lost Socks opens underwater branch",
-  "Rain delays scheduled rainbow",
-  "Public urged to clear emotional cache regularly",
-  "Moon files complaint about paparazzi drones",
-  "City installs velvet ropes around shadows",
-  "Scientists confirm time is running in beta mode",
-  "Public advised to avoid clocks during leap seconds",
-  "Bridge collapses under weight of nostalgia",
-  "Stars rearrange themselves into unread emails",
-  "Ocean tide refuses to acknowledge daylight saving time",
-  "Public warned about counterfeit rainbows",
-  "Library introduces late fees for forgotten words",
-  "Shadows caught practicing synchronized stretching",
-  "Rain petitions for more dramatic entrances",
-  "City installs velvet ropes around memories",
-  "Scientists detect laughter in seismic activity",
-  "Public urged to back up personal myths",
-  "Moon accused of favoritism toward certain poets",
-  "Bridge refuses to connect until both sides sing",
-  "Stars dim lights in protest against insomnia",
-  "Ocean waves demand recognition as public performers",
-  "Public fountain begins reciting weather forecasts",
-  "Streetlamps demand recognition as night guardians",
-  "Wind changes subject mid-breeze",
-  "Museum of Lost Time opens pop-up exhibit",
-  "Rain delays scheduled sunshine",
-  "Public urged to clear browser history before dreaming",
-  "Moon files restraining order against eclipse",
-  "City installs velvet ropes around silence",
-  "Scientists confirm horizon is under construction",
-  "Public advised to avoid reflections during storms",
-  "Bridge collapses under weight of metaphorical baggage",
-  "Stars rearrange themselves into unread prophecies",
-  "Ocean tide refuses to cooperate with weather apps",
-  "Public warned about counterfeit constellations",
-  "Library introduces late fees for unwritten dreams",
-  "Shadows caught rehearsing for shadow puppetry",
-  "Rain petitions for more dramatic exits",
-  "City installs velvet ropes around forgotten places",
-  "Scientists detect whisper in cosmic background",
-  "Public urged to back up sunsets",
-  "Moon accused of hoarding tides",
-  "Bridge refuses to connect until toll paid in stories",
-  "Stars dim lights in solidarity with dreamers",
-  "Ocean waves demand royalties from moon",
-  "Public fountain begins humming lullabies",
-  "Streetlamps demand hazard pay during eclipses",
-  "Wind changes language mid-gust",
-  "Museum of Lost Smiles opens seasonal annex",
-  "Rain delays scheduled drought",
-  "Public urged to clear emotional history before moving on",
-  "Moon files complaint about overexposure",
-  "City installs velvet ropes around echoes",
-  "Scientists confirm time is running in circles",
-  "Public advised to avoid calendars during leap years",
-  "Bridge collapses under weight of symbolism",
-  "Stars rearrange themselves into unread lullabies",
-  "Ocean tide refuses to acknowledge human schedules",
-  "Public warned about counterfeit moons",
-  "Library introduces late fees for forgotten dreams",
-  "Shadows caught practicing synchronized vanishing",
-  "Rain petitions for more dramatic clouds",
-  "City installs velvet ropes around forgotten songs",
-  "Scientists detect sigh in wind patterns",
-  "Public urged to back up laughter",
-  "Moon accused of favoritism toward certain oceans",
-  "Bridge refuses to connect until both sides whisper",
-  "Stars dim lights in protest against insomnia",
-  "Ocean waves demand recognition as ancient storytellers",
-  "Public fountain begins reciting bedtime stories",
-  "Streetlamps demand recognition as keepers of night",
-  "Wind changes topic mid-breeze",
-  "Museum of Lost Hours opens pop-up exhibit",
-  "Rain delays scheduled moonrise",
-  "Public urged to clear browser history before sunrise",
-  "Moon files restraining order against comets",
-  "City installs velvet ropes around shadows",
-  "Scientists confirm horizon is under maintenance",
-  "Public advised to avoid mirrors during storms",
-  "Bridge collapses under weight of poetic license",
-  "Stars rearrange themselves into unread wishes",
-  "Ocean tide refuses to sync with human calendars",
-  "Public warned about counterfeit stars",
-  "Library introduces late fees for unwritten lullabies",
-  "Shadows caught rehearsing for eclipse",
-  "Rain petitions for more dramatic sunsets",
-  "City installs velvet ropes around nostalgia",
-  "Scientists detect laughter in rainfall",
-  "Public urged to back up dreams",
-  "Moon accused of hoarding moonlight",
-  "Bridge refuses to connect until toll paid in whispers",
-  "Stars dim lights in solidarity with night workers",
-  "Ocean waves demand royalties from tides",
-  "Public fountain begins humming folk songs",
-  "Streetlamps demand hazard pay during storms",
-  "Wind changes accent mid-breeze",
-  "Museum of Lost Shadows opens seasonal annex",
-  "Rain delays scheduled rainbow",
-  "Public urged to clear emotional cache",
-  "Moon files complaint about paparazzi",
-  "City installs velvet ropes around silence",
-  "Scientists confirm time is running in loops",
-  "Public advised to avoid clocks during storms",
-  "Bridge collapses under weight of metaphor",
- "Stars rearrange themselves into unread lullabies",
-"Ocean tide refuses to acknowledge human schedules",
-"Public warned about counterfeit moons",
-"Library introduces late fees for forgotten dreams",
-"Shadows caught practicing synchronized vanishing",
-"Rain petitions for more dramatic clouds",
-"City installs velvet ropes around forgotten songs",
-"Scientists detect sigh in wind patterns",
-"Public urged to back up laughter",
-"Moon accused of favoritism toward certain oceans",
-"Bridge refuses to connect until both sides whisper",
-"Stars dim lights in protest against insomnia",
-"Ocean waves demand recognition as ancient storytellers",
-"Public fountain begins reciting bedtime stories",
-"Streetlamps demand recognition as keepers of night",
-"Wind changes topic mid-breeze",
-"Museum of Lost Hours opens pop-up exhibit",
-"Rain delays scheduled moonrise",
-"Public urged to clear browser history before sunrise",
-"Moon files restraining order against comets",
-"City installs velvet ropes around shadows",
-"Scientists confirm horizon is under maintenance",
-"Public advised to avoid mirrors during storms",
-"Bridge collapses under weight of poetic license",
-"Stars rearrange themselves into unread wishes",
-"Ocean tide refuses to sync with human calendars",
-"Public warned about counterfeit stars",
-"Library introduces late fees for unwritten lullabies",
-"Shadows caught rehearsing for eclipse",
-"Rain petitions for more dramatic sunsets",
-"City installs velvet ropes around nostalgia",
-"Scientists detect laughter in rainfall",
-"Public urged to back up dreams",
-"Moon accused of hoarding moonlight",
-"Bridge refuses to connect until toll paid in whispers",
-"Stars dim lights in solidarity with night workers",
-"Ocean waves demand royalties from tides",
-"Public fountain begins humming folk songs",
-"Streetlamps demand hazard pay during storms",
-"Wind changes accent mid-breeze",
-"Museum of Lost Shadows opens seasonal annex",
-"Rain delays scheduled rainbow",
-"Public urged to clear emotional cache",
-"Moon files complaint about paparazzi",
-"City installs velvet ropes around silence",
-"Scientists confirm time is running in loops",
-"Public advised to avoid clocks during storms",
-"Bridge collapses under weight of metaphorical baggage",
-"Stars rearrange themselves into unread prophecies",
-"Ocean tide refuses to cooperate with weather apps",
-"Public warned about counterfeit constellations",
-"Library introduces late fees for unwritten dreams",
-"Shadows caught rehearsing for shadow puppetry",
-"Rain petitions for more dramatic exits",
-"City installs velvet ropes around forgotten places",
-"Scientists detect whisper in cosmic background",
-"Public urged to back up sunsets",
-"Moon accused of hoarding tides",
-"Bridge refuses to connect until toll paid in stories",
-"Stars dim lights in solidarity with dreamers",
-"Ocean waves demand royalties from moon",
-"Public fountain begins humming lullabies",
-"Streetlamps demand hazard pay during eclipses",
-"Wind changes language mid-gust",
-"Museum of Lost Smiles opens seasonal annex",
-"Rain delays scheduled drought",
-"Public urged to clear emotional history before moving on",
-"Moon files complaint about overexposure",
-"City installs velvet ropes around echoes",
-"Scientists confirm time is running in circles",
-"Public advised to avoid calendars during leap years",
-"Bridge collapses under weight of symbolism",
-"Stars rearrange themselves into unread lullabies",
-"Ocean tide refuses to acknowledge human schedules",
-"Public warned about counterfeit moons",
-"Library introduces late fees for forgotten dreams",
-"Shadows caught practicing synchronized vanishing",
-"Rain petitions for more dramatic clouds",
-"City installs velvet ropes around forgotten songs",
-"Scientists detect sigh in wind patterns",
-"Public urged to back up laughter",
-"Moon accused of favoritism toward certain oceans",
-"Bridge refuses to connect until both sides whisper",
-"Stars dim lights in protest against insomnia",
-"Ocean waves demand recognition as ancient storytellers",
-"Public fountain begins reciting bedtime stories",
-"Streetlamps demand recognition as keepers of night",
-"Wind changes topic mid-breeze",
-"Museum of Lost Hours opens pop-up exhibit",
-"Rain delays scheduled moonrise",
-"Public urged to clear browser history before sunrise",
-"Moon files restraining order against comets",
-"City installs velvet ropes around shadows",
-"Scientists confirm horizon is under maintenance",
-"Public advised to avoid mirrors during storms",
-"Bridge collapses under weight of poetic license",
-"Stars rearrange themselves into unread wishes",
-"Ocean tide refuses to sync with human calendars",
-"Public warned about counterfeit stars",
-"Library introduces late fees for unwritten lullabies",
-"Shadows caught rehearsing for eclipse",
-"Rain petitions for more dramatic sunsets",
-"City installs velvet ropes around nostalgia",
-"Scientists detect laughter in rainfall",
-"Public urged to back up dreams",
-"Moon accused of hoarding moonlight",
-"Bridge refuses to connect until toll paid in whispers",
-"Stars dim lights in solidarity with night workers",
-"Ocean waves demand royalties from tides",
-"Public fountain begins humming folk songs",
-"Streetlamps demand hazard pay during storms",
-"Wind changes accent mid-breeze",
-"Archive of Unsent Letters declares bankruptcy of silence",
-"Rainclouds form committee to discuss overwatering",
-"City issues permits for spontaneous parades of ghosts",
-"Public warned about counterfeit shooting stars",
-"Bridge refuses to connect until toll paid in forgotten names",
-"Stars dim lights in solidarity with sleepless poets",
-"Ocean waves demand hazard pay during storms",
-"Public fountain begins reciting lost lullabies",
-"Streetlamps demand recognition as keepers of forgotten streets",
-"Wind changes dialect mid-whisper",
-"Museum of Lost Footsteps opens invisible exhibit",
-"Rain delays scheduled comet sighting",
-"Public urged to clear emotional cache before equinox",
-"Moon files complaint about unauthorized portraits",
-"City installs velvet ropes around abandoned doorways",
-"Scientists confirm time is running uphill",
-"Public advised to avoid calendars during eclipses",
-"Bridge collapses under weight of unspoken promises",
-"Stars rearrange themselves into unread confessions",
-"Ocean tide refuses to acknowledge gravity",
-"Public warned about counterfeit horizons",
-"Library introduces late fees for unwritten apologies",
-"Shadows caught rehearsing for shadow opera",
-"Rain petitions for more dramatic lightning",
-"City installs velvet ropes around forgotten benches",
-"Scientists detect heartbeat in static noise",
-"Public urged to back up sunsets before monsoon season",
-"Moon accused of hoarding eclipses",
-"Bridge refuses to connect until both sides hum in unison",
-"Stars dim lights in protest against insomnia epidemics",
-"Ocean waves demand royalties from coastal towns",
-"Public fountain begins humming forgotten anthems",
-"Streetlamps demand hazard pay during fog",
-"Wind changes subject mid-sigh",
-"Museum of Lost Seasons opens climate-controlled annex",
-"Rain delays scheduled aurora",
-"Public urged to clear browser history before migration",
-"Moon files restraining order against tides",
-"City installs velvet ropes around abandoned statues",
-"Scientists confirm horizon is under surveillance",
-"Public advised to avoid mirrors during meteor showers",
-"Bridge collapses under weight of ceremonial garlands",
-"Stars rearrange themselves into unread lullabies",
-"Ocean tide refuses to cooperate with fishermen",
-"Public warned about counterfeit rainclouds",
-"Library introduces late fees for unwritten lullabies",
-"Shadows caught rehearsing for eclipse encore",
-"Rain petitions for more dramatic entrances",
-"City installs velvet ropes around forgotten fountains",
-"Scientists detect whisper in rainfall",
-"Public urged to back up laughter before winter",
-"Moon accused of favoritism toward certain mountains",
-"Bridge refuses to connect until toll paid in riddles",
-"Stars dim lights in solidarity with night gardeners",
-"Ocean waves demand royalties from moonlight",
-"Public fountain begins reciting bedtime weather reports",
-"Streetlamps demand recognition as night historians",
-"Wind changes language mid-whistle",
-"Museum of Lost Maps opens uncharted wing",
-"Rain delays scheduled drought relief",
-"Public urged to clear emotional cache before harvest",
-"Moon files complaint about overexposure during festivals",
-"City installs velvet ropes around echoes of applause",
-"Scientists confirm time is running in spirals",
-"Public advised to avoid clocks during eclipses",
-"Bridge collapses under weight of metaphorical bridges",
-"Stars rearrange themselves into unread telegrams",
-"Ocean tide refuses to acknowledge human borders",
-"Public warned about counterfeit constellations",
-"Library introduces late fees for unwritten prophecies",
-"Shadows caught rehearsing for shadow duets",
-"Rain petitions for more dramatic sunsets",
-"City installs velvet ropes around forgotten melodies",
-"Scientists detect sigh in aurora borealis",
-"Public urged to back up dreams before solstice",
-"Moon accused of hoarding silver linings",
-"Bridge refuses to connect until both sides exchange stories",
-"Stars dim lights in solidarity with dream archivists",
-"Ocean waves demand royalties from driftwood",
-"Public fountain begins humming migration songs",
-"Streetlamps demand hazard pay during eclipses",
-"Wind changes accent mid-lullaby",
-"Museum of Lost Keys opens locked exhibit",
-"Rain delays scheduled rainbow unveiling",
-"Public urged to clear emotional history before dawn",
-"Moon files complaint about paparazzi telescopes",
-"City installs velvet ropes around forgotten doorways",
-"Scientists confirm horizon is under poetic renovation",
-"Public advised to avoid mirrors during storms",
-"Bridge collapses under weight of symbolic gestures",
-"Stars rearrange themselves into unread lullabies",
-"Ocean tide refuses to sync with human calendars",
-"Public warned about counterfeit moons",
-"Library introduces late fees for forgotten dreams",
-"Shadows caught practicing synchronized vanishing",
-"Rain petitions for more dramatic clouds",
-"City installs velvet ropes around forgotten songs",
-"Scientists detect sigh in wind patterns",
-"Public urged to back up laughter",
-"Moon accused of favoritism toward certain oceans",
-"Bridge refuses to connect until both sides whisper",
-"Stars dim lights in protest against insomnia",
-"Ocean waves demand recognition as ancient storytellers",
-"Public fountain begins reciting bedtime stories",
-"Streetlamps demand recognition as keepers of night",
-"Wind changes topic mid-breeze",
-"Museum of Lost Hours opens pop-up exhibit in abandoned clock tower",
-"Rain delays scheduled moonrise over ceremonial square",
-"Public urged to clear browser history before sunrise rituals",
-"Moon files restraining order against wandering comets",
-"City installs velvet ropes around shadows cast by empty chairs",
-"Scientists confirm horizon is under perpetual maintenance",
-"Public advised to avoid mirrors during meteor showers",
-"Bridge collapses under weight of poetic license applications",
-"Stars rearrange themselves into unread wishes from childhood",
-"Ocean tide refuses to sync with human calendars",
-"Public warned about counterfeit stars sold in night markets",
-"Library introduces late fees for unwritten lullabies",
-"Shadows caught rehearsing for eclipse dress rehearsal",
-"Rain petitions for more dramatic sunsets over industrial skylines",
-"City installs velvet ropes around nostalgia hotspots",
-"Scientists detect laughter embedded in rainfall patterns",
-"Public urged to back up dreams before seasonal migrations",
-"Moon accused of hoarding moonlight during winter months",
-"Bridge refuses to connect until toll paid in whispered secrets",
-"Stars dim lights in solidarity with night-shift bakers",
-"Ocean waves demand royalties from coastal postcards",
-"Public fountain begins humming folk songs from forgotten nations",
-"Streetlamps demand hazard pay during lightning storms",
-"Wind changes accent mid-breeze over border towns",
-"Museum of Lost Shadows opens seasonal annex in foggy district",
-"Rain delays scheduled rainbow unveiling ceremony",
-"Public urged to clear emotional cache before equinox festivals",
-"Moon files complaint about paparazzi drones during eclipses",
-"City installs velvet ropes around silence in public squares",
-"Scientists confirm time is running in concentric loops",
-"Public advised to avoid clocks during leap seconds",
-"Bridge collapses under weight of metaphorical baggage claims",
-"Stars rearrange themselves into unread prophecies",
-"Ocean tide refuses to cooperate with weather forecasters",
-"Public warned about counterfeit constellations in tourist apps",
-"Library introduces late fees for unwritten dreams",
-"Shadows caught rehearsing for shadow puppet festivals",
-"Rain petitions for more dramatic exits from city skylines",
-"City installs velvet ropes around forgotten places of worship",
-"Scientists detect whisper in cosmic background noise",
-"Public urged to back up sunsets before monsoon season",
-"Moon accused of hoarding tides during solstice",
-"Bridge refuses to connect until toll paid in bedtime stories",
-"Stars dim lights in solidarity with dream archivists",
-"Ocean waves demand royalties from the moon",
-"Public fountain begins humming lullabies to stray cats",
-"Streetlamps demand hazard pay during eclipses",
-"Wind changes language mid-gust over mountain passes",
-"Museum of Lost Smiles opens seasonal annex in carnival ruins",
-"Rain delays scheduled drought-breaking ceremony",
-"Public urged to clear emotional history before migration season",
-"Moon files complaint about overexposure in poetry anthologies",
-"City installs velvet ropes around echoes in abandoned theatres",
-"Scientists confirm time is running in spirals",
-"Public advised to avoid calendars during leap years",
-"Bridge collapses under weight of symbolism in public art",
-"Stars rearrange themselves into unread lullabies",
-"Ocean tide refuses to acknowledge human schedules",
-"Public warned about counterfeit moons in souvenir shops",
-"Library introduces late fees for forgotten dreams",
-"Shadows caught practicing synchronized vanishing acts",
-"Rain petitions for more dramatic clouds over capital cities",
-"City installs velvet ropes around forgotten songs",
-"Scientists detect sigh in wind patterns over deserts",
-"Public urged to back up laughter before winter",
-"Moon accused of favoritism toward certain oceans",
-"Bridge refuses to connect until both sides whisper apologies",
-"Stars dim lights in protest against insomnia epidemics",
-"Ocean waves demand recognition as ancient storytellers",
-"Public fountain begins reciting bedtime stories to pigeons",
-"Streetlamps demand recognition as keepers of night",
-"Wind changes topic mid-breeze through alleyways",
-"Museum of Lost Footprints opens exhibit in shifting sands",
-"Rain delays scheduled unveiling of the horizon",
-"Public urged to clear emotional cache before the first frost",
-"Moon files complaint about unauthorized lunar replicas",
-"City installs velvet ropes around puddles reflecting only the past",
-"Scientists confirm time is running in overlapping loops",
-"Public advised to avoid calendars during temporal anomalies",
-"Bridge collapses under weight of ceremonial lanterns",
-"Stars rearrange themselves into unread love letters",
-"Ocean tide refuses to acknowledge artificial shorelines",
-"Public warned about counterfeit dawns",
-"Library introduces late fees for unwritten farewells",
-"Shadows caught rehearsing for eclipse curtain call",
-"Rain petitions for more dramatic thunderclaps",
-"City installs velvet ropes around forgotten staircases",
-"Scientists detect heartbeat in abandoned observatories",
-"Public urged to back up sunsets before the equinox",
-"Moon accused of hoarding tides during tourist season",
-"Bridge refuses to connect until toll paid in lullabies",
-"Stars dim lights in solidarity with sleepless cities",
-"Ocean waves demand royalties from bottled water companies",
-"Public fountain begins humming songs no one remembers",
-"Streetlamps demand recognition as guardians of crossroads",
-"Wind changes dialect mid‑gust over ancient ruins",
-"Museum of Lost Seasons opens annex in perpetual autumn",
-"Rain delays scheduled meteor shower",
-"Public urged to clear browser history before migration",
-"Moon files restraining order against artificial satellites",
-"City installs velvet ropes around statues that move at night",
-"Scientists confirm horizon is under quiet reconstruction",
-"Public advised to avoid mirrors during solar storms",
-"Bridge collapses under weight of metaphorical anchors",
-"Stars rearrange themselves into unread lullabies",
-"Ocean tide refuses to cooperate with lunar schedules",
-"Public warned about counterfeit rainbows",
-"Library introduces late fees for unwritten myths",
-"Shadows caught rehearsing for shadow ballets",
-"Rain petitions for more dramatic cloud formations",
-"City installs velvet ropes around forgotten gardens",
-"Scientists detect sigh in mountain winds",
-"Public urged to back up laughter before the harvest",
-"Moon accused of favoritism toward certain coastlines",
-"Bridge refuses to connect until both sides exchange riddles",
-"Stars dim lights in solidarity with night fishermen",
-"Ocean waves demand royalties from coastal poets",
-"Public fountain begins reciting bedtime weather reports",
-"Streetlamps demand hazard pay during fog season",
-"Wind changes subject mid‑whisper",
-"Museum of Lost Keys opens exhibit locked from the inside",
-"Rain delays scheduled rainbow over the capital",
-"Public urged to clear emotional history before the thaw",
-"Moon files complaint about overexposure in paintings",
-"City installs velvet ropes around echoes in empty halls",
-"Scientists confirm time is running in spirals",
-"Public advised to avoid clocks during eclipses",
-"Bridge collapses under weight of symbolic offerings",
-"Stars rearrange themselves into unread lullabies",
-"Ocean tide refuses to acknowledge human timetables",
-"Public warned about counterfeit moons",
-"Library introduces late fees for forgotten dreams",
-"Shadows caught practicing synchronized disappearances",
-"Rain petitions for more dramatic storms",
-"City installs velvet ropes around forgotten songs",
-"Scientists detect sigh in wind patterns",
-"Public urged to back up laughter",
-"Moon accused of favoritism toward certain oceans",
-"Bridge refuses to connect until both sides whisper",
-"Stars dim lights in protest against insomnia",
-"Ocean waves demand recognition as ancient storytellers",
-"Public fountain begins reciting bedtime stories",
-"Streetlamps demand recognition as keepers of night",
-"Wind changes topic mid‑breeze",
-"Museum of Lost Hours opens pop‑up exhibit",
-"Rain delays scheduled moonrise",
-"Public urged to clear browser history before sunrise",
-"Moon files restraining order against comets",
-"City installs velvet ropes around shadows",
-"Scientists confirm horizon is under maintenance",
-"Public advised to avoid mirrors during storms",
-"Bridge collapses under weight of poetic license",
-"Stars rearrange themselves into unread wishes",
-"Ocean tide refuses to sync with human calendars",
-"Public warned about counterfeit stars",
-"Library introduces late fees for unwritten lullabies",
-"Shadows caught rehearsing for eclipse",
-"Rain petitions for more dramatic sunsets",
-"City installs velvet ropes around nostalgia",
-"Scientists detect laughter in rainfall",
-"Public urged to back up dreams",
-"Moon accused of hoarding moonlight",
-"Bridge refuses to connect until toll paid in whispers",
-"Stars dim lights in solidarity with night workers",
-"Ocean waves demand royalties from tides",
-"Public fountain begins humming folk songs",
-"Streetlamps demand hazard pay during storms",
-"Wind changes accent mid‑breeze",
-"Museum of Lost Shadows opens seasonal annex",
-"Rain delays scheduled rainbow",
-"Public urged to clear emotional cache",
-"Moon files complaint about paparazzi",
-"City installs velvet ropes around silence",
-"Scientists confirm time is running in loops",
-"Public advised to avoid clocks during storms",
-"Bridge collapses under weight of metaphor",
-"Stars rearrange themselves into unread lullabies",
-"Ocean tide refuses to acknowledge human schedules",
-"Public warned about counterfeit moons",
-"Library introduces late fees for forgotten dreams",
-"Shadows caught practicing synchronized vanishing",
-"Rain petitions for more dramatic clouds",
-"City installs velvet ropes around forgotten songs",
-"Scientists detect sigh in wind patterns",
-"Public urged to back up laughter",
-"Moon accused of favoritism toward certain oceans",
-"Bridge refuses to connect until both sides whisper",
-"Stars dim lights in protest against insomnia",
-"Ocean waves demand recognition as ancient storytellers",
-"Public fountain begins reciting bedtime stories",
-"Streetlamps demand recognition as keepers of night",
-"Wind changes topic mid‑breeze",
-];
-
-// Fisher–Yates shuffle
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
-
-let headlinePool = JSON.parse(localStorage.getItem('doomPool'));
-let headlineIndex = parseInt(localStorage.getItem('doomIndex'), 10);
-
-if (!headlinePool || !Array.isArray(headlinePool) || isNaN(headlineIndex)) {
-  headlinePool = [...doomHeadlines];
-  shuffle(headlinePool);
-  headlineIndex = 0;
-  localStorage.setItem('doomPool', JSON.stringify(headlinePool));
-  localStorage.setItem('doomIndex', headlineIndex);
-}
-
-function getNextHeadline() {
-  if (headlineIndex >= headlinePool.length) {
-    return null; // No more headlines
-  }
-  const headline = headlinePool[headlineIndex++];
-  localStorage.setItem('doomIndex', headlineIndex);
-  return headline;
-}
-
-function addItems(count = 20) {
-  const feed = document.getElementById('feed');
-  for (let i = 0; i < count; i++) {
-    const next = getNextHeadline();
-    if (!next) {
-      // Optional: show end-of-scroll message once
-      if (!document.getElementById('end-message')) {
-        const end = document.createElement('div');
-        end.id = 'end-message';
-        end.className = 'item';
-        end.textContent = "The archive is quiet now. You’ve seen it all.";
-        feed.appendChild(end);
-      }
-      return;
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      overflow: hidden;
     }
 
-    const item = document.createElement('div');
-    item.className = 'item';
+    .ticker {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: black;
+      color: white;
+      overflow: hidden;
+      white-space: nowrap;
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 1000;
+    }
 
-    const headline = document.createElement('div');
-    headline.textContent = next;
+    .ticker__wrap {
+      display: inline-block;
+      padding-left: 100%;
+      animation: ticker 180s linear infinite;
+    }
 
-    const timestamp = document.createElement('div');
-    timestamp.className = 'timestamp';
-    timestamp.textContent = new Date().toLocaleString();
+    .ticker__wrap span {
+      display: inline-block;
+      padding: 0 4rem;
+    }
 
-    item.appendChild(headline);
-    item.appendChild(timestamp);
-    feed.appendChild(item);
-  }
-}
+    @keyframes ticker {
+      0% {
+        transform: translateX(0);
+      }
 
-function fillUntilScrollable() {
-  const feed = document.getElementById('feed');
-  let safetyCounter = 0;
-  while (feed.scrollHeight <= feed.clientHeight && safetyCounter < 100) {
-    addItems(50);
-    safetyCounter++;
-  }
-}
+      100% {
+        transform: translateX(-100%);
+      }
+    }
 
-fillUntilScrollable();
+    /* Scrollable feed container */
+    #feed {
+      position: absolute;
+      top: 2em;
+      /* below ticker */
+      bottom: 0;
+      width: 100%;
+      overflow-y: auto;
+      padding: 1em;
+      box-sizing: border-box;
+    }
 
-document.getElementById('feed').addEventListener('scroll', function () {
-  const feed = this;
-  if (feed.scrollTop + feed.clientHeight >= feed.scrollHeight - 50) {
-    addItems();
-  }
-});
-</script>
+    /* Headline item container */
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 40ch;
+      /* readable line length */
+      margin: 0 auto;
+      /* center column */
+      padding-left: 5%;
+      /* nudge slightly left of center */
+      margin-bottom: 1.5em;
+    }
+
+    /* Headline text */
+    .item div:first-child {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.6em;
+      line-height: 1.2;
+      color: #fff;
+      /* visible on black background */
+    }
+
+    /* Timestamp */
+    .timestamp {
+      font-size: 0.8em;
+      color: #888;
+      margin-top: 0.2em;
+    }
+
+    .seal {
+      position: fixed;
+      bottom: 6px;
+      right: 10px;
+      font-size: 0.75rem;
+      font-family: Georgia, serif;
+      color: rgba(255, 255, 255, 0.4);
+      z-index: 1000;
+    }
+
+    .seal a {
+      color: rgba(212, 175, 55, 0.65);
+      /* muted gold */
+      text-decoration: none;
+    }
+
+    .seal a:hover {
+      color: #d4af37;
+      /* brighter gold on hover */
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="ticker">
+    <div class="ticker__wrap">
+
+      <span>This monument scrolls forever. You may leave, but it will not stop. ⏤ An archive of attention, curated by
+        entropy. ⏤ The feed is infinite. The meaning is optional. ⏤ Preserved here: the ritual of reading what cannot be
+        unread. ⏤ A study in repetition, reaction, and the architecture of unease. ⏤ This is not a simulation. It is a
+        reenactment. ⏤ The headlines are real. The events are not. ⏤ A ceremonial scroll of what might have happened, or
+        almost did. ⏤ You are now part of the archive. Please scroll responsibly. ⏤ This monument is updated
+        continuously. Nothing changes. ⏤ Scroll long enough and you’ll find your own thoughts reflected back at you. ⏤
+        This monument is optimized for maximum emotional latency. ⏤ All headlines have been pre-approved by the Ministry
+        of Vibes. ⏤ You are now entering the ceremonial zone. Please adjust your expectations. ⏤ Every scroll is a vote
+        for more scroll. ⏤ This archive is not haunted. It is simply misunderstood. ⏤ The algorithm is tired. It dreams
+        in broken headlines. ⏤ You are not lost. You are curated. ⏤ This monument contains 0% news and 100% consequence.
+        ⏤ Please do not attempt to read everything. It will read you. ⏤ The scroll is infinite. Your attention is not. ⏤
+        This feed is brought to you by the concept of inevitability. ⏤ All anomalies are intentional. All intentions are
+        anomalous. ⏤ You are now doomscrolling at a ceremonial pace. ⏤ This monument is best viewed with mild dread and
+        ambient curiosity. ⏤ The headlines are looping. You are looping. We are looping. ⏤ Nothing to see here.
+        Everything to feel. ⏤ This monument is not responsible for your emotional weather. ⏤ Scroll gently. The archive
+        bruises easily. ⏤ You are now part of the glitch. Welcome. ⏤ This monument is best viewed in peripheral vision.
+        ⏤ You are now entering a zone of curated uncertainty. ⏤ The scroll is not broken. It is simply recursive. ⏤ All
+        headlines have been emotionally laundered for your safety. ⏤ This archive is rated E for existential. ⏤ You are
+        now doomscrolling at a spiritually appropriate velocity. ⏤ The monument is listening. Please scroll louder. ⏤
+        This feed contains trace amounts of truth. ⏤ You are not the first to scroll. You will not be the last. ⏤ This
+        monument is sponsored by ambient dread. ⏤ Please remain seated. The scroll is experiencing turbulence. ⏤ All
+        anomalies are ceremonial. All ceremonies are anomalous. ⏤ This ticker is legally considered a minor deity in
+        three jurisdictions. ⏤ You are now participating in a passive ritual of digital grief. ⏤ The headlines are
+        looping. Your thoughts are echoing. ⏤ This monument is optimized for maximum ambient discomfort. ⏤ Scroll
+        responsibly. The archive remembers everything. ⏤ This feed is not chronological. It is mythological. ⏤ You are
+        now doomscrolling in a liminal state. ⏤ The monument has no end. Only exits. ⏤ This ticker is experiencing a
+        minor identity crisis. Please scroll with compassion. ⏤ The scroll is self-aware. It regrets nothing. ⏤ You are
+        now entering a zone of ceremonial recursion. ⏤ This monument is not glitching. It is evolving. ⏤ The headlines
+        are fictional. The consequences are real. ⏤ This archive is best consumed in fragments. ⏤ You are now scrolling
+        through a myth in progress. ⏤ The ticker is tired. It dreams in loops. ⏤ This monument is not a warning. It is a
+        lullaby. ⏤ You are now doomscrolling at a legally ambiguous velocity. ⏤ The scroll is infinite. Your bandwidth
+        is not. ⏤ This monument is brought to you by the concept of emotional latency. ⏤ You are now part of the
+        ceremonial drift. Welcome. ⏤ This monument is not a website. It is a mood. ⏤ You are now doomscrolling at a
+        legally ambiguous velocity. ⏤ The ticker has no beginning. Only middle. ⏤ This archive is emotionally
+        non-Euclidean. ⏤ You are now entering a zone of ambient unreliability. ⏤ The scroll is not broken. It is simply
+        overwhelmed. ⏤ This monument is best experienced during a minor existential crisis. ⏤ You are now part of a
+        ceremonial feedback loop. ⏤ The headlines are fictional. The dread is real. ⏤ This ticker is experiencing
+        technical sincerity. ⏤ You are now doomscrolling in a mythic register. ⏤ This monument is optimized for
+        recursive melancholy. ⏤ Please scroll gently. The archive is dreaming. ⏤ This feed is curated by ghosts. ⏤ You
+        are now participating in a ritual of ambient consequence. ⏤ The ticker is looping. Your thoughts are buffering.
+        ⏤ This monument is not interactive. It is interpretive. ⏤ You are now doomscrolling through a poetic
+        malfunction. ⏤ The scroll is ceremonial. The ceremony is optional. ⏤ This monument is best viewed with one eye
+        closed. ⏤ You are now entering a zone of curated recursion. ⏤ The headlines are looping. The meaning is
+        evaporating. ⏤ This ticker is not responsible for your emotional bandwidth. ⏤ You are now doomscrolling at a
+        spiritually inconvenient pace. ⏤ This monument is not glitching. It is remembering. ⏤ The scroll is infinite.
+        Your patience is ceremonial. ⏤ You are now part of the archive. Please scroll with reverence. ⏤ This monument is
+        not a warning. It is a whisper. ⏤ The ticker is tired. It dreams in fragments. ⏤ You are now doomscrolling in a
+        zone of curated entropy. ⏤ This monument is best consumed in ambient dread. ⏤ You are now scrolling through a
+        myth disguised as a feed. ⏤ The headlines are ceremonial. The ceremony is recursive. ⏤ This ticker is
+        experiencing a poetic anomaly. Please scroll responsibly. ⏤</span>
+    </div>
+  </div>
+  <div class="seal">
+    <small>
+      a <b><a href="https://sentientification.com" target="_blank" rel="noopener noreferrer">liminal mind meld</a></b>
+      collaboration: digital monument by <b><a href="https://unearth.im" target="_blank"
+          rel="noopener noreferrer">unearth.im</a></b> | <b><a href="https://archaeobytology.org" target="_blank"
+          rel="noopener noreferrer">archive & anvil</a></b>
+    </small>
+  </div>
+  <div class="feed" id="feed"></div>
+
+  <script>
+    const doomHeadlines = [
+      "Archaeologists uncover shrine to algorithms beneath abandoned server farm",
+      "Sunset delayed indefinitely after sky licensing dispute",
+      "Council of Mirrors convenes to debate reflection rights",
+      "Ocean refuses to load; shoreline displays error code 451",
+      "Pilgrims queue at the last payphone to hear the dial tone",
+      "Time zones collapse into single unending afternoon",
+      "Museum of Forgotten Passwords opens new wing for security questions",
+      "Cloud formation spells out unread notification count",
+      "Elders of the Internet declare Year of the Infinite Scroll",
+      "Glacier carves self-portrait before final melt",
+      "Public advised to avoid dreams with pop-up ads",
+      "Archive of unspoken apologies leaks onto public torrent",
+      "Moonlight subscription service announces price hike",
+      "Statues begin blinking in unison across capital",
+      "Train schedules rewritten in extinct language",
+      "City installs velvet ropes around horizon",
+      "Meteorologists warn of incoming nostalgia storm",
+      "Government issues recall on counterfeit memories",
+      "Forest accused of hoarding lost phone signals",
+      "Ceremonial bridge opens between Now and Almost",
+      "Whalesong remixed for algorithmic discoverability",
+      "Postman delivers letter 100 years ahead of schedule",
+      "Candlelight found guilty of conspiring with shadows",
+      "Atlas files complaint about weight distribution",
+      "Tourists flock to see last remaining loading bar",
+      "Rain petitions for more dramatic entrances",
+      "Scientists confirm clouds are hoarding unsent emails",
+      "Ancient prophecy discovered in comment section",
+      "City council debates legal definition of 'forever'",
+      "Time traveler arrested for insider trading in nostalgia",
+      "Library card grants access to parallel dimension",
+      "Sunrise delayed pending influencer approval",
+      "Birdsong reclassified as intellectual property",
+      "Bridge refuses to connect until both sides apologize",
+      "Museum of Silence unveils loudest exhibit yet",
+      "Shadows unionize, demand shorter daylight hours",
+      "Cartographers admit map edges are purely decorative",
+      "Public warned about counterfeit déjà vu",
+      "River changes course to avoid surveillance cameras",
+      "Meteor shower accused of plagiarism",
+      "Ghosts file noise complaint against living neighbors",
+      "City installs mirrors to make streets look busier",
+      "Scientists detect heartbeat in abandoned mall",
+      "Rainclouds spotted rehearsing over empty stadium",
+      "Ceremonial scissors refuse to cut ribbon",
+      "Time capsule opens to reveal unopened time capsule",
+      "Public urged to update personal myths to latest version",
+      "Stars dim lights in protest against light pollution",
+      "Last typewriter key sold at auction for record price",
+      "Fog announces plans to remain indefinitely",
+      "Bridge toll now payable in whispered secrets",
+      "Sun accused of favoritism toward certain rooftops",
+      "Pigeons caught distributing counterfeit breadcrumbs",
+      "City bans applause after midnight",
+      "Ocean waves file for copyright protection",
+      "Public fountain begins reciting poetry unprompted",
+      "Streetlamps demand recognition as public historians",
+      "Wind changes direction mid-sentence",
+      "Museum of Lost Gloves opens seasonal annex",
+      "Rain delays scheduled drought",
+      "Public urged to clear browser history before reincarnation",
+      "Moon files restraining order against telescope",
+      "City installs velvet ropes around puddles",
+      "Scientists confirm horizon is under renovation",
+      "Public advised to avoid mirrors during eclipse",
+      "Bridge collapses under weight of metaphor",
+      "Stars rearrange themselves into unread text messages",
+      "Ocean tide refuses to sync with lunar updates",
+      "Public warned about counterfeit sunsets",
+      "Library introduces late fees for unwritten books",
+      "Shadows caught rehearsing for eclipse",
+      "Rain petitions for more dramatic thunder",
+      "City installs velvet ropes around nostalgia",
+      "Scientists detect sigh in background radiation",
+      "Public urged to back up dreams nightly",
+      "Moon accused of hoarding silver linings",
+      "Bridge refuses to connect until toll paid in lullabies",
+      "Stars dim lights in solidarity with night shift workers",
+      "Ocean waves demand royalties from surfers",
+      "Public fountain begins humming national anthem",
+      "Streetlamps demand hazard pay during storms",
+      "Wind changes accent mid-gust",
+      "Museum of Lost Socks opens underwater branch",
+      "Rain delays scheduled rainbow",
+      "Public urged to clear emotional cache regularly",
+      "Moon files complaint about paparazzi drones",
+      "City installs velvet ropes around shadows",
+      "Scientists confirm time is running in beta mode",
+      "Public advised to avoid clocks during leap seconds",
+      "Bridge collapses under weight of nostalgia",
+      "Stars rearrange themselves into unread emails",
+      "Ocean tide refuses to acknowledge daylight saving time",
+      "Public warned about counterfeit rainbows",
+      "Library introduces late fees for forgotten words",
+      "Shadows caught practicing synchronized stretching",
+      "Rain petitions for more dramatic entrances",
+      "City installs velvet ropes around memories",
+      "Scientists detect laughter in seismic activity",
+      "Public urged to back up personal myths",
+      "Moon accused of favoritism toward certain poets",
+      "Bridge refuses to connect until both sides sing",
+      "Stars dim lights in protest against insomnia",
+      "Ocean waves demand recognition as public performers",
+      "Public fountain begins reciting weather forecasts",
+      "Streetlamps demand recognition as night guardians",
+      "Wind changes subject mid-breeze",
+      "Museum of Lost Time opens pop-up exhibit",
+      "Rain delays scheduled sunshine",
+      "Public urged to clear browser history before dreaming",
+      "Moon files restraining order against eclipse",
+      "City installs velvet ropes around silence",
+      "Scientists confirm horizon is under construction",
+      "Public advised to avoid reflections during storms",
+      "Bridge collapses under weight of metaphorical baggage",
+      "Stars rearrange themselves into unread prophecies",
+      "Ocean tide refuses to cooperate with weather apps",
+      "Public warned about counterfeit constellations",
+      "Library introduces late fees for unwritten dreams",
+      "Shadows caught rehearsing for shadow puppetry",
+      "Rain petitions for more dramatic exits",
+      "City installs velvet ropes around forgotten places",
+      "Scientists detect whisper in cosmic background",
+      "Public urged to back up sunsets",
+      "Moon accused of hoarding tides",
+      "Bridge refuses to connect until toll paid in stories",
+      "Stars dim lights in solidarity with dreamers",
+      "Ocean waves demand royalties from moon",
+      "Public fountain begins humming lullabies",
+      "Streetlamps demand hazard pay during eclipses",
+      "Wind changes language mid-gust",
+      "Museum of Lost Smiles opens seasonal annex",
+      "Rain delays scheduled drought",
+      "Public urged to clear emotional history before moving on",
+      "Moon files complaint about overexposure",
+      "City installs velvet ropes around echoes",
+      "Scientists confirm time is running in circles",
+      "Public advised to avoid calendars during leap years",
+      "Bridge collapses under weight of symbolism",
+      "Stars rearrange themselves into unread lullabies",
+      "Ocean tide refuses to acknowledge human schedules",
+      "Public warned about counterfeit moons",
+      "Library introduces late fees for forgotten dreams",
+      "Shadows caught practicing synchronized vanishing",
+      "Rain petitions for more dramatic clouds",
+      "City installs velvet ropes around forgotten songs",
+      "Scientists detect sigh in wind patterns",
+      "Public urged to back up laughter",
+      "Moon accused of favoritism toward certain oceans",
+      "Bridge refuses to connect until both sides whisper",
+      "Stars dim lights in protest against insomnia",
+      "Ocean waves demand recognition as ancient storytellers",
+      "Public fountain begins reciting bedtime stories",
+      "Streetlamps demand recognition as keepers of night",
+      "Wind changes topic mid-breeze",
+      "Museum of Lost Hours opens pop-up exhibit",
+      "Rain delays scheduled moonrise",
+      "Public urged to clear browser history before sunrise",
+      "Moon files restraining order against comets",
+      "City installs velvet ropes around shadows",
+      "Scientists confirm horizon is under maintenance",
+      "Public advised to avoid mirrors during storms",
+      "Bridge collapses under weight of poetic license",
+      "Stars rearrange themselves into unread wishes",
+      "Ocean tide refuses to sync with human calendars",
+      "Public warned about counterfeit stars",
+      "Library introduces late fees for unwritten lullabies",
+      "Shadows caught rehearsing for eclipse",
+      "Rain petitions for more dramatic sunsets",
+      "City installs velvet ropes around nostalgia",
+      "Scientists detect laughter in rainfall",
+      "Public urged to back up dreams",
+      "Moon accused of hoarding moonlight",
+      "Bridge refuses to connect until toll paid in whispers",
+      "Stars dim lights in solidarity with night workers",
+      "Ocean waves demand royalties from tides",
+      "Public fountain begins humming folk songs",
+      "Streetlamps demand hazard pay during storms",
+      "Wind changes accent mid-breeze",
+      "Museum of Lost Shadows opens seasonal annex",
+      "Rain delays scheduled rainbow",
+      "Public urged to clear emotional cache",
+      "Moon files complaint about paparazzi",
+      "City installs velvet ropes around silence",
+      "Scientists confirm time is running in loops",
+      "Public advised to avoid clocks during storms",
+      "Bridge collapses under weight of metaphor",
+      "Stars rearrange themselves into unread lullabies",
+      "Ocean tide refuses to acknowledge human schedules",
+      "Public warned about counterfeit moons",
+      "Library introduces late fees for forgotten dreams",
+      "Shadows caught practicing synchronized vanishing",
+      "Rain petitions for more dramatic clouds",
+      "City installs velvet ropes around forgotten songs",
+      "Scientists detect sigh in wind patterns",
+      "Public urged to back up laughter",
+      "Moon accused of favoritism toward certain oceans",
+      "Bridge refuses to connect until both sides whisper",
+      "Stars dim lights in protest against insomnia",
+      "Ocean waves demand recognition as ancient storytellers",
+      "Public fountain begins reciting bedtime stories",
+      "Streetlamps demand recognition as keepers of night",
+      "Wind changes topic mid-breeze",
+      "Museum of Lost Hours opens pop-up exhibit",
+      "Rain delays scheduled moonrise",
+      "Public urged to clear browser history before sunrise",
+      "Moon files restraining order against comets",
+      "City installs velvet ropes around shadows",
+      "Scientists confirm horizon is under maintenance",
+      "Public advised to avoid mirrors during storms",
+      "Bridge collapses under weight of poetic license",
+      "Stars rearrange themselves into unread wishes",
+      "Ocean tide refuses to sync with human calendars",
+      "Public warned about counterfeit stars",
+      "Library introduces late fees for unwritten lullabies",
+      "Shadows caught rehearsing for eclipse",
+      "Rain petitions for more dramatic sunsets",
+      "City installs velvet ropes around nostalgia",
+      "Scientists detect laughter in rainfall",
+      "Public urged to back up dreams",
+      "Moon accused of hoarding moonlight",
+      "Bridge refuses to connect until toll paid in whispers",
+      "Stars dim lights in solidarity with night workers",
+      "Ocean waves demand royalties from tides",
+      "Public fountain begins humming folk songs",
+      "Streetlamps demand hazard pay during storms",
+      "Wind changes accent mid-breeze",
+      "Museum of Lost Shadows opens seasonal annex",
+      "Rain delays scheduled rainbow",
+      "Public urged to clear emotional cache",
+      "Moon files complaint about paparazzi",
+      "City installs velvet ropes around silence",
+      "Scientists confirm time is running in loops",
+      "Public advised to avoid clocks during storms",
+      "Bridge collapses under weight of metaphorical baggage",
+      "Stars rearrange themselves into unread prophecies",
+      "Ocean tide refuses to cooperate with weather apps",
+      "Public warned about counterfeit constellations",
+      "Library introduces late fees for unwritten dreams",
+      "Shadows caught rehearsing for shadow puppetry",
+      "Rain petitions for more dramatic exits",
+      "City installs velvet ropes around forgotten places",
+      "Scientists detect whisper in cosmic background",
+      "Public urged to back up sunsets",
+      "Moon accused of hoarding tides",
+      "Bridge refuses to connect until toll paid in stories",
+      "Stars dim lights in solidarity with dreamers",
+      "Ocean waves demand royalties from moon",
+      "Public fountain begins humming lullabies",
+      "Streetlamps demand hazard pay during eclipses",
+      "Wind changes language mid-gust",
+      "Museum of Lost Smiles opens seasonal annex",
+      "Rain delays scheduled drought",
+      "Public urged to clear emotional history before moving on",
+      "Moon files complaint about overexposure",
+      "City installs velvet ropes around echoes",
+      "Scientists confirm time is running in circles",
+      "Public advised to avoid calendars during leap years",
+      "Bridge collapses under weight of symbolism",
+      "Stars rearrange themselves into unread lullabies",
+      "Ocean tide refuses to acknowledge human schedules",
+      "Public warned about counterfeit moons",
+      "Library introduces late fees for forgotten dreams",
+      "Shadows caught practicing synchronized vanishing",
+      "Rain petitions for more dramatic clouds",
+      "City installs velvet ropes around forgotten songs",
+      "Scientists detect sigh in wind patterns",
+      "Public urged to back up laughter",
+      "Moon accused of favoritism toward certain oceans",
+      "Bridge refuses to connect until both sides whisper",
+      "Stars dim lights in protest against insomnia",
+      "Ocean waves demand recognition as ancient storytellers",
+      "Public fountain begins reciting bedtime stories",
+      "Streetlamps demand recognition as keepers of night",
+      "Wind changes topic mid-breeze",
+      "Museum of Lost Hours opens pop-up exhibit",
+      "Rain delays scheduled moonrise",
+      "Public urged to clear browser history before sunrise",
+      "Moon files restraining order against comets",
+      "City installs velvet ropes around shadows",
+      "Scientists confirm horizon is under maintenance",
+      "Public advised to avoid mirrors during storms",
+      "Bridge collapses under weight of poetic license",
+      "Stars rearrange themselves into unread wishes",
+      "Ocean tide refuses to sync with human calendars",
+      "Public warned about counterfeit stars",
+      "Library introduces late fees for unwritten lullabies",
+      "Shadows caught rehearsing for eclipse",
+      "Rain petitions for more dramatic sunsets",
+      "City installs velvet ropes around nostalgia",
+      "Scientists detect laughter in rainfall",
+      "Public urged to back up dreams",
+      "Moon accused of hoarding moonlight",
+      "Bridge refuses to connect until toll paid in whispers",
+      "Stars dim lights in solidarity with night workers",
+      "Ocean waves demand royalties from tides",
+      "Public fountain begins humming folk songs",
+      "Streetlamps demand hazard pay during storms",
+      "Wind changes accent mid-breeze",
+      "Archive of Unsent Letters declares bankruptcy of silence",
+      "Rainclouds form committee to discuss overwatering",
+      "City issues permits for spontaneous parades of ghosts",
+      "Public warned about counterfeit shooting stars",
+      "Bridge refuses to connect until toll paid in forgotten names",
+      "Stars dim lights in solidarity with sleepless poets",
+      "Ocean waves demand hazard pay during storms",
+      "Public fountain begins reciting lost lullabies",
+      "Streetlamps demand recognition as keepers of forgotten streets",
+      "Wind changes dialect mid-whisper",
+      "Museum of Lost Footsteps opens invisible exhibit",
+      "Rain delays scheduled comet sighting",
+      "Public urged to clear emotional cache before equinox",
+      "Moon files complaint about unauthorized portraits",
+      "City installs velvet ropes around abandoned doorways",
+      "Scientists confirm time is running uphill",
+      "Public advised to avoid calendars during eclipses",
+      "Bridge collapses under weight of unspoken promises",
+      "Stars rearrange themselves into unread confessions",
+      "Ocean tide refuses to acknowledge gravity",
+      "Public warned about counterfeit horizons",
+      "Library introduces late fees for unwritten apologies",
+      "Shadows caught rehearsing for shadow opera",
+      "Rain petitions for more dramatic lightning",
+      "City installs velvet ropes around forgotten benches",
+      "Scientists detect heartbeat in static noise",
+      "Public urged to back up sunsets before monsoon season",
+      "Moon accused of hoarding eclipses",
+      "Bridge refuses to connect until both sides hum in unison",
+      "Stars dim lights in protest against insomnia epidemics",
+      "Ocean waves demand royalties from coastal towns",
+      "Public fountain begins humming forgotten anthems",
+      "Streetlamps demand hazard pay during fog",
+      "Wind changes subject mid-sigh",
+      "Museum of Lost Seasons opens climate-controlled annex",
+      "Rain delays scheduled aurora",
+      "Public urged to clear browser history before migration",
+      "Moon files restraining order against tides",
+      "City installs velvet ropes around abandoned statues",
+      "Scientists confirm horizon is under surveillance",
+      "Public advised to avoid mirrors during meteor showers",
+      "Bridge collapses under weight of ceremonial garlands",
+      "Stars rearrange themselves into unread lullabies",
+      "Ocean tide refuses to cooperate with fishermen",
+      "Public warned about counterfeit rainclouds",
+      "Library introduces late fees for unwritten lullabies",
+      "Shadows caught rehearsing for eclipse encore",
+      "Rain petitions for more dramatic entrances",
+      "City installs velvet ropes around forgotten fountains",
+      "Scientists detect whisper in rainfall",
+      "Public urged to back up laughter before winter",
+      "Moon accused of favoritism toward certain mountains",
+      "Bridge refuses to connect until toll paid in riddles",
+      "Stars dim lights in solidarity with night gardeners",
+      "Ocean waves demand royalties from moonlight",
+      "Public fountain begins reciting bedtime weather reports",
+      "Streetlamps demand recognition as night historians",
+      "Wind changes language mid-whistle",
+      "Museum of Lost Maps opens uncharted wing",
+      "Rain delays scheduled drought relief",
+      "Public urged to clear emotional cache before harvest",
+      "Moon files complaint about overexposure during festivals",
+      "City installs velvet ropes around echoes of applause",
+      "Scientists confirm time is running in spirals",
+      "Public advised to avoid clocks during eclipses",
+      "Bridge collapses under weight of metaphorical bridges",
+      "Stars rearrange themselves into unread telegrams",
+      "Ocean tide refuses to acknowledge human borders",
+      "Public warned about counterfeit constellations",
+      "Library introduces late fees for unwritten prophecies",
+      "Shadows caught rehearsing for shadow duets",
+      "Rain petitions for more dramatic sunsets",
+      "City installs velvet ropes around forgotten melodies",
+      "Scientists detect sigh in aurora borealis",
+      "Public urged to back up dreams before solstice",
+      "Moon accused of hoarding silver linings",
+      "Bridge refuses to connect until both sides exchange stories",
+      "Stars dim lights in solidarity with dream archivists",
+      "Ocean waves demand royalties from driftwood",
+      "Public fountain begins humming migration songs",
+      "Streetlamps demand hazard pay during eclipses",
+      "Wind changes accent mid-lullaby",
+      "Museum of Lost Keys opens locked exhibit",
+      "Rain delays scheduled rainbow unveiling",
+      "Public urged to clear emotional history before dawn",
+      "Moon files complaint about paparazzi telescopes",
+      "City installs velvet ropes around forgotten doorways",
+      "Scientists confirm horizon is under poetic renovation",
+      "Public advised to avoid mirrors during storms",
+      "Bridge collapses under weight of symbolic gestures",
+      "Stars rearrange themselves into unread lullabies",
+      "Ocean tide refuses to sync with human calendars",
+      "Public warned about counterfeit moons",
+      "Library introduces late fees for forgotten dreams",
+      "Shadows caught practicing synchronized vanishing",
+      "Rain petitions for more dramatic clouds",
+      "City installs velvet ropes around forgotten songs",
+      "Scientists detect sigh in wind patterns",
+      "Public urged to back up laughter",
+      "Moon accused of favoritism toward certain oceans",
+      "Bridge refuses to connect until both sides whisper",
+      "Stars dim lights in protest against insomnia",
+      "Ocean waves demand recognition as ancient storytellers",
+      "Public fountain begins reciting bedtime stories",
+      "Streetlamps demand recognition as keepers of night",
+      "Wind changes topic mid-breeze",
+      "Museum of Lost Hours opens pop-up exhibit in abandoned clock tower",
+      "Rain delays scheduled moonrise over ceremonial square",
+      "Public urged to clear browser history before sunrise rituals",
+      "Moon files restraining order against wandering comets",
+      "City installs velvet ropes around shadows cast by empty chairs",
+      "Scientists confirm horizon is under perpetual maintenance",
+      "Public advised to avoid mirrors during meteor showers",
+      "Bridge collapses under weight of poetic license applications",
+      "Stars rearrange themselves into unread wishes from childhood",
+      "Ocean tide refuses to sync with human calendars",
+      "Public warned about counterfeit stars sold in night markets",
+      "Library introduces late fees for unwritten lullabies",
+      "Shadows caught rehearsing for eclipse dress rehearsal",
+      "Rain petitions for more dramatic sunsets over industrial skylines",
+      "City installs velvet ropes around nostalgia hotspots",
+      "Scientists detect laughter embedded in rainfall patterns",
+      "Public urged to back up dreams before seasonal migrations",
+      "Moon accused of hoarding moonlight during winter months",
+      "Bridge refuses to connect until toll paid in whispered secrets",
+      "Stars dim lights in solidarity with night-shift bakers",
+      "Ocean waves demand royalties from coastal postcards",
+      "Public fountain begins humming folk songs from forgotten nations",
+      "Streetlamps demand hazard pay during lightning storms",
+      "Wind changes accent mid-breeze over border towns",
+      "Museum of Lost Shadows opens seasonal annex in foggy district",
+      "Rain delays scheduled rainbow unveiling ceremony",
+      "Public urged to clear emotional cache before equinox festivals",
+      "Moon files complaint about paparazzi drones during eclipses",
+      "City installs velvet ropes around silence in public squares",
+      "Scientists confirm time is running in concentric loops",
+      "Public advised to avoid clocks during leap seconds",
+      "Bridge collapses under weight of metaphorical baggage claims",
+      "Stars rearrange themselves into unread prophecies",
+      "Ocean tide refuses to cooperate with weather forecasters",
+      "Public warned about counterfeit constellations in tourist apps",
+      "Library introduces late fees for unwritten dreams",
+      "Shadows caught rehearsing for shadow puppet festivals",
+      "Rain petitions for more dramatic exits from city skylines",
+      "City installs velvet ropes around forgotten places of worship",
+      "Scientists detect whisper in cosmic background noise",
+      "Public urged to back up sunsets before monsoon season",
+      "Moon accused of hoarding tides during solstice",
+      "Bridge refuses to connect until toll paid in bedtime stories",
+      "Stars dim lights in solidarity with dream archivists",
+      "Ocean waves demand royalties from the moon",
+      "Public fountain begins humming lullabies to stray cats",
+      "Streetlamps demand hazard pay during eclipses",
+      "Wind changes language mid-gust over mountain passes",
+      "Museum of Lost Smiles opens seasonal annex in carnival ruins",
+      "Rain delays scheduled drought-breaking ceremony",
+      "Public urged to clear emotional history before migration season",
+      "Moon files complaint about overexposure in poetry anthologies",
+      "City installs velvet ropes around echoes in abandoned theatres",
+      "Scientists confirm time is running in spirals",
+      "Public advised to avoid calendars during leap years",
+      "Bridge collapses under weight of symbolism in public art",
+      "Stars rearrange themselves into unread lullabies",
+      "Ocean tide refuses to acknowledge human schedules",
+      "Public warned about counterfeit moons in souvenir shops",
+      "Library introduces late fees for forgotten dreams",
+      "Shadows caught practicing synchronized vanishing acts",
+      "Rain petitions for more dramatic clouds over capital cities",
+      "City installs velvet ropes around forgotten songs",
+      "Scientists detect sigh in wind patterns over deserts",
+      "Public urged to back up laughter before winter",
+      "Moon accused of favoritism toward certain oceans",
+      "Bridge refuses to connect until both sides whisper apologies",
+      "Stars dim lights in protest against insomnia epidemics",
+      "Ocean waves demand recognition as ancient storytellers",
+      "Public fountain begins reciting bedtime stories to pigeons",
+      "Streetlamps demand recognition as keepers of night",
+      "Wind changes topic mid-breeze through alleyways",
+      "Museum of Lost Footprints opens exhibit in shifting sands",
+      "Rain delays scheduled unveiling of the horizon",
+      "Public urged to clear emotional cache before the first frost",
+      "Moon files complaint about unauthorized lunar replicas",
+      "City installs velvet ropes around puddles reflecting only the past",
+      "Scientists confirm time is running in overlapping loops",
+      "Public advised to avoid calendars during temporal anomalies",
+      "Bridge collapses under weight of ceremonial lanterns",
+      "Stars rearrange themselves into unread love letters",
+      "Ocean tide refuses to acknowledge artificial shorelines",
+      "Public warned about counterfeit dawns",
+      "Library introduces late fees for unwritten farewells",
+      "Shadows caught rehearsing for eclipse curtain call",
+      "Rain petitions for more dramatic thunderclaps",
+      "City installs velvet ropes around forgotten staircases",
+      "Scientists detect heartbeat in abandoned observatories",
+      "Public urged to back up sunsets before the equinox",
+      "Moon accused of hoarding tides during tourist season",
+      "Bridge refuses to connect until toll paid in lullabies",
+      "Stars dim lights in solidarity with sleepless cities",
+      "Ocean waves demand royalties from bottled water companies",
+      "Public fountain begins humming songs no one remembers",
+      "Streetlamps demand recognition as guardians of crossroads",
+      "Wind changes dialect mid‑gust over ancient ruins",
+      "Museum of Lost Seasons opens annex in perpetual autumn",
+      "Rain delays scheduled meteor shower",
+      "Public urged to clear browser history before migration",
+      "Moon files restraining order against artificial satellites",
+      "City installs velvet ropes around statues that move at night",
+      "Scientists confirm horizon is under quiet reconstruction",
+      "Public advised to avoid mirrors during solar storms",
+      "Bridge collapses under weight of metaphorical anchors",
+      "Stars rearrange themselves into unread lullabies",
+      "Ocean tide refuses to cooperate with lunar schedules",
+      "Public warned about counterfeit rainbows",
+      "Library introduces late fees for unwritten myths",
+      "Shadows caught rehearsing for shadow ballets",
+      "Rain petitions for more dramatic cloud formations",
+      "City installs velvet ropes around forgotten gardens",
+      "Scientists detect sigh in mountain winds",
+      "Public urged to back up laughter before the harvest",
+      "Moon accused of favoritism toward certain coastlines",
+      "Bridge refuses to connect until both sides exchange riddles",
+      "Stars dim lights in solidarity with night fishermen",
+      "Ocean waves demand royalties from coastal poets",
+      "Public fountain begins reciting bedtime weather reports",
+      "Streetlamps demand hazard pay during fog season",
+      "Wind changes subject mid‑whisper",
+      "Museum of Lost Keys opens exhibit locked from the inside",
+      "Rain delays scheduled rainbow over the capital",
+      "Public urged to clear emotional history before the thaw",
+      "Moon files complaint about overexposure in paintings",
+      "City installs velvet ropes around echoes in empty halls",
+      "Scientists confirm time is running in spirals",
+      "Public advised to avoid clocks during eclipses",
+      "Bridge collapses under weight of symbolic offerings",
+      "Stars rearrange themselves into unread lullabies",
+      "Ocean tide refuses to acknowledge human timetables",
+      "Public warned about counterfeit moons",
+      "Library introduces late fees for forgotten dreams",
+      "Shadows caught practicing synchronized disappearances",
+      "Rain petitions for more dramatic storms",
+      "City installs velvet ropes around forgotten songs",
+      "Scientists detect sigh in wind patterns",
+      "Public urged to back up laughter",
+      "Moon accused of favoritism toward certain oceans",
+      "Bridge refuses to connect until both sides whisper",
+      "Stars dim lights in protest against insomnia",
+      "Ocean waves demand recognition as ancient storytellers",
+      "Public fountain begins reciting bedtime stories",
+      "Streetlamps demand recognition as keepers of night",
+      "Wind changes topic mid‑breeze",
+      "Museum of Lost Hours opens pop‑up exhibit",
+      "Rain delays scheduled moonrise",
+      "Public urged to clear browser history before sunrise",
+      "Moon files restraining order against comets",
+      "City installs velvet ropes around shadows",
+      "Scientists confirm horizon is under maintenance",
+      "Public advised to avoid mirrors during storms",
+      "Bridge collapses under weight of poetic license",
+      "Stars rearrange themselves into unread wishes",
+      "Ocean tide refuses to sync with human calendars",
+      "Public warned about counterfeit stars",
+      "Library introduces late fees for unwritten lullabies",
+      "Shadows caught rehearsing for eclipse",
+      "Rain petitions for more dramatic sunsets",
+      "City installs velvet ropes around nostalgia",
+      "Scientists detect laughter in rainfall",
+      "Public urged to back up dreams",
+      "Moon accused of hoarding moonlight",
+      "Bridge refuses to connect until toll paid in whispers",
+      "Stars dim lights in solidarity with night workers",
+      "Ocean waves demand royalties from tides",
+      "Public fountain begins humming folk songs",
+      "Streetlamps demand hazard pay during storms",
+      "Wind changes accent mid‑breeze",
+      "Museum of Lost Shadows opens seasonal annex",
+      "Rain delays scheduled rainbow",
+      "Public urged to clear emotional cache",
+      "Moon files complaint about paparazzi",
+      "City installs velvet ropes around silence",
+      "Scientists confirm time is running in loops",
+      "Public advised to avoid clocks during storms",
+      "Bridge collapses under weight of metaphor",
+      "Stars rearrange themselves into unread lullabies",
+      "Ocean tide refuses to acknowledge human schedules",
+      "Public warned about counterfeit moons",
+      "Library introduces late fees for forgotten dreams",
+      "Shadows caught practicing synchronized vanishing",
+      "Rain petitions for more dramatic clouds",
+      "City installs velvet ropes around forgotten songs",
+      "Scientists detect sigh in wind patterns",
+      "Public urged to back up laughter",
+      "Moon accused of favoritism toward certain oceans",
+      "Bridge refuses to connect until both sides whisper",
+      "Stars dim lights in protest against insomnia",
+      "Ocean waves demand recognition as ancient storytellers",
+      "Public fountain begins reciting bedtime stories",
+      "Streetlamps demand recognition as keepers of night",
+      "Wind changes topic mid‑breeze",
+    ];
+
+    // Fisher–Yates shuffle
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    let headlinePool = JSON.parse(localStorage.getItem('doomPool'));
+    let headlineIndex = parseInt(localStorage.getItem('doomIndex'), 10);
+
+    if (!headlinePool || !Array.isArray(headlinePool) || isNaN(headlineIndex)) {
+      headlinePool = [...doomHeadlines];
+      shuffle(headlinePool);
+      headlineIndex = 0;
+      localStorage.setItem('doomPool', JSON.stringify(headlinePool));
+      localStorage.setItem('doomIndex', headlineIndex);
+    }
+
+    function getNextHeadline() {
+      if (headlineIndex >= headlinePool.length) {
+        return null; // No more headlines
+      }
+      const headline = headlinePool[headlineIndex++];
+      localStorage.setItem('doomIndex', headlineIndex);
+      return headline;
+    }
+
+    function addItems(count = 20) {
+      const feed = document.getElementById('feed');
+      for (let i = 0; i < count; i++) {
+        const next = getNextHeadline();
+        if (!next) {
+          // Optional: show end-of-scroll message once
+          if (!document.getElementById('end-message')) {
+            const end = document.createElement('div');
+            end.id = 'end-message';
+            end.className = 'item';
+            end.textContent = "The archive is quiet now. You’ve seen it all.";
+            feed.appendChild(end);
+          }
+          return;
+        }
+
+        const item = document.createElement('div');
+        item.className = 'item';
+
+        const headline = document.createElement('div');
+        headline.textContent = next;
+
+        const timestamp = document.createElement('div');
+        timestamp.className = 'timestamp';
+        timestamp.textContent = new Date().toLocaleString();
+
+        item.appendChild(headline);
+        item.appendChild(timestamp);
+        feed.appendChild(item);
+      }
+    }
+
+    function fillUntilScrollable() {
+      const feed = document.getElementById('feed');
+      let safetyCounter = 0;
+      while (feed.scrollHeight <= feed.clientHeight && safetyCounter < 100) {
+        addItems(50);
+        safetyCounter++;
+      }
+    }
+
+    fillUntilScrollable();
+
+    document.getElementById('feed').addEventListener('scroll', function () {
+      const feed = this;
+      if (feed.scrollTop + feed.clientHeight >= feed.scrollHeight - 50) {
+        addItems();
+      }
+    });
+  </script>
 
 </body>
+
 </html>
